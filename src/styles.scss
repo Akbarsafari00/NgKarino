@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "shabnam-font/dist/font-face.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
+  font-family: "Shabnam FD", serif;
+  font-size: 16px;
+  @apply bg-gray-100;
+  @apply text-neutral-700;
+}
+
+
+
+.card {
+  @apply bg-white rounded-lg shadow px-4 py-8 ;
+}
+
+.border-button {
+  @apply block px-4 py-2 rounded-lg cursor-pointer border bg-white hover:bg-neutral-50;
+}
+
+.primary-button {
+  @apply block px-4 py-2 rounded-lg cursor-pointer hover:bg-teal-600 bg-teal-500 text-white;
+}
+
+
+.input {
+  @apply bg-neutral-100 rounded-lg px-4 py-2 text-gray-700 flex items-center gap-4;
+}

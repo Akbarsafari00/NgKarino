@@ -1,0 +1,45 @@
+<app-layout>
+  <div class="grid grid-cols-12  gap-4">
+    <div class="col-span-12 lg:col-span-3 flex flex-col gap-4">
+      <app-navigation-menu></app-navigation-menu>
+    </div>
+    <div class="col-span-12 lg:col-span-9">
+      <div class="flex flex-col gap-4">
+        <div class="card">
+          <div class="flex items-center gap-4">
+            <input type="text" class="input grow" placeholder="کلید واژه">
+            <input type="text" class="input grow" placeholder="نوع">
+            <input type="submit" class="primary-button" value="جستجو">
+          </div>
+        </div>
+        <a *ngFor="let a of fakeArray; let index = index" class="cursor-pointer">
+          <article class="bg-white rounded-lg shadow flex flex-col p-8">
+            <div class="flex gap-4 items-center">
+              <h2 class="font-bold text-lg">ساخت اپلیکیشن غیر فعال سازی دوربین جلو و دوربین عقب</h2>
+              <span class="text-sm bg-purple-700 text-white rounded px-2 py-1">۲۹ روز مانده</span>
+            </div>
+            <div class="flex gap-4 mt-4">
+              <p><small class="text-gray-700">بودجه : </small>1,000,000 تومان</p>
+              <p><small class="text-gray-700">زمان پیشنهادی : </small>10 روز</p>
+            </div>
+            <div class="flex flex-col text-sm py-4 text-gray-700 mt-4">
+              <p>اپلیکیشنی میخواهم که قابلیت غیر فعال سازی دوربین جلو و دوربین عقب در آی او اس و اندروید را دارا
+                باشد. </p>
+            </div>
+            <div class="mt-4">
+              <ul class="flex gap-2">
+                <li class="px-4 py-2 rounded text-xs cursor-pointer bg-gray-500 text-white"><a>آی او اس</a></li>
+                <li class="px-4 py-2 rounded text-xs cursor-pointer bg-gray-500 text-white"><a>ios</a></li>
+                <li class="px-4 py-2 rounded text-xs cursor-pointer bg-gray-500 text-white"><a>اپلیکیشن اندروید</a></li>
+                <li class="px-4 py-2 rounded text-xs cursor-pointer bg-gray-500 text-white"><a>طراحی اپلیکیشن</a></li>
+              </ul>
+            </div>
+            <button class="rounded text-sm border border-gray-500 p-4 mt-8">
+              توضیحات بیشتر
+            </button>
+          </article>
+        </a>
+      </div>
+    </div>
+  </div>
+</app-layout>
